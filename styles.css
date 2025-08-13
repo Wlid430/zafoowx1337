@@ -6,10 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/WhatsApp Image 2025-07-14 at 07.35.11_547eb732.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #000;
     color: #fff;
     line-height: 1.6;
 }
@@ -109,6 +106,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/WhatsApp Image 2025-07-14 at 07.35.11_547eb732.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+}
+
+/* Fix for iOS Safari bug */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: auto 100vh;
+    }
 }
 
 .hero-content h2 {
