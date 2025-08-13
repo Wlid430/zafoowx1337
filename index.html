@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zafoowx1337 - Streetwear Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>ZAFOOW<span class="x-small">X</span><span class="small">1337</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="basket-btn" onclick="toggleBasket()">
+                        <span>Basket</span>
+                        <span class="basket-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>NEW COLLECTION</h2>
+                <h3>LIVE NOW</h3>
+                <p>Exclusive streetwear designs - Limited availability</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="collection" id="collection">
+            <div class="container">
+                <h2 class="section-title">Featured Collection</h2>
+                <div class="product-grid" id="productGrid">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ZAFOOW<span class="x-small">X</span><span class="small">1337</span></h4>
+                    <p>Streetwear for the culture</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>info@cemsfashion.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="basket-overlay" id="basketOverlay">
+        <div class="basket-content">
+            <div class="basket-header">
+                <h3>Shopping Basket</h3>
+                <button class="close-basket" onclick="toggleBasket()">×</button>
+            </div>
+            <div class="basket-items" id="basketItems">
+                <p class="empty-basket">Your basket is empty</p>
+            </div>
+            <div class="basket-total">
+                <p>Total: €0.00</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
